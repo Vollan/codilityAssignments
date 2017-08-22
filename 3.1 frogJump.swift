@@ -3,8 +3,7 @@
 import UIKit
 
 public func solution(_ X : Int, _ Y : Int, _ D : Int) -> Int {
-    let addingNumber: CGFloat = ((Y-X)%D)==0 ? 0 : 0.4999999
-    return X==Y ? 0 : Int(ceil(CGFloat((Y-X)/D)+addingNumber))
+    return Int(ceil(Double(Y-X)/Double(D)))
 }
 
 
